@@ -6,6 +6,7 @@ import sha1 from 'sha1'
 
 export const get_index = [auth.isAuthorized, (req, res) =>  {
     Users.findAll({
+        where: { name: req.session.username }
     }).then(data => {
         res.json(data);
     })
