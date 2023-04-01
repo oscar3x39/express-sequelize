@@ -17,7 +17,8 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.4.1"
+    "sequelize-cli": "^6.4.1",
+    "express-controller": "git@github.com:oscar3x39/express-controllers.git"
   },
   "scripts": {
     "dev": "nodemon -r esm server.js"
